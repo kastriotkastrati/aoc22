@@ -1,7 +1,7 @@
 
-pub fn calculate_one() -> i32 {
+pub fn calculate() -> i32 {
 
-  let path = std::path::Path::new("./src/one/data.txt");
+  let path = std::path::Path::new("./src/day_1/data.txt");
   let data_text = std::fs::read_to_string(path).unwrap();
 
   let per_elf: Vec<&str> = data_text.split("\n\n").collect();
